@@ -33,7 +33,7 @@
         
         <div class="icon-container">
     <a href="" class="contact-btn" target="_blank"><img src="image/facebook.png" alt=""></a>
-    <a href="" class="contact-btn" target="_blank"><img src="image/github.png" alt=""></a>
+    <a href="https://github.com/Wardun-00" class="contact-btn" target="_blank"><img src="image/github.png" alt=""></a>
     <a href="" class="contact-btn" target="_blank"><img src="image/instagram.png" alt=""></a>
  </div>
     </div>
@@ -57,6 +57,9 @@
 
 
  <!-- Body Card section Start.......................... -->
+  <div class="robo-info">
+    <h1 cla="robo-info-text"><a href="#rb-btn" class="rb-text-a">Click here and visit futuristic Robot</a></h1>
+  </div>
  <div class="robo-card-container">
  <div class="robo-card">
     <div class="robo-image">
@@ -66,7 +69,7 @@
         <h2>NOVA-X9</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quaerat ullam. Tenetur quo placeat asperiores, ducimus quos sint iusto iste obcaecati beatae quasi hic dignissimos itaque cupiditate velit sed voluptas!</p>
     </div>
-    <button><a href="">Read More</a></button>
+    <button class="robo-btn" id="rb-btn"><a href="">Read More</a></button>
  </div>
 
  
@@ -78,7 +81,7 @@
         <h2>AETHERION</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quaerat ullam. Tenetur quo placeat asperiores, ducimus quos sint iusto iste obcaecati beatae quasi hic dignissimos itaque cupiditate velit sed voluptas!</p>
     </div>
-    <button><a href="">Read More</a></button>
+    <button class="robo-btn" id="rb-btn"><a href="">Read More</a></button>
  </div>
 
 
@@ -102,7 +105,7 @@
         <h2>VANTIS CORE</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quaerat ullam. Tenetur quo placeat asperiores, ducimus quos sint iusto iste obcaecati beatae quasi hic dignissimos itaque cupiditate velit sed voluptas!</p>
     </div>
-    <button><a href="">Read More</a></button>
+    <button class="robo-btn" id="rb-btn"><a href="">Read More</a></button>
  </div>
 
 
@@ -114,7 +117,7 @@
         <h2>LUMINA-VELIX</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quaerat ullam. Tenetur quo placeat asperiores, ducimus quos sint iusto iste obcaecati beatae quasi hic dignissimos itaque cupiditate velit sed voluptas!</p>
     </div>
-    <button><a href="">Read More</a></button>
+    <button class="robo-btn" id="rb-btn"><a href="">Read More</a></button>
  </div>
 
 
@@ -122,7 +125,96 @@
 </div>
 
 
- 
-    
+ <div class="youtube">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/aircAruvnKk?si=u9-lCu7YTfANLHx1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/wjZofJX0v4M?si=c6cgbgrMZkq-8oub" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/aircAruvnKk?si=UJuXSQrc4F1Akocr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+ </div>
+
+ <!-- ....form filup for contact
+  ........using ai code...........
+  ........................................................ -->
+
+<!-- Add this under your main content (maybe at the end of body) -->
+<section class="form-section">
+  <div class="form-box" id="formBox">
+    <div class="form-header">
+      <h2 id="formTitle">Login</h2>
+    </div>
+
+    <form id="loginForm">
+      <div class="input-box">
+        <input type="text" required />
+        <label>Username</label>
+      </div>
+
+      <div class="input-box">
+        <input type="password" required />
+        <label>Password</label>
+      </div>
+
+      <div class="extra-links">
+        <a href="#">Forgot Password?</a>
+      </div>
+
+      <button type="submit" class="form-btn">Login</button>
+
+      <p class="toggle-text">Don't have an account?
+        <span onclick="toggleForm()">Create one</span>
+      </p>
+    </form>
+
+    <!-- Signup form (Initially hidden) -->
+    <form id="signupForm" style="display: none;">
+      <div class="input-box">
+        <input type="text" required />
+        <label>Full Name</label>
+      </div>
+
+      <div class="input-box">
+        <input type="email" required />
+        <label>Email</label>
+      </div>
+
+      <div class="input-box">
+        <input type="password" required />
+        <label>Password</label>
+      </div>
+
+      <button type="submit" class="form-btn">Register</button>
+
+      <p class="toggle-text">Already have an account?
+        <span onclick="toggleForm()">Login</span>
+      </p>
+    </form>
+  </div>
+</section>
+<!-- HTML এর একদম শেষে, </body> tag এর ঠিক আগেই বসাও -->
+...
+</section>  
+
+<script>
+  function toggleForm() {
+    let loginForm = document.getElementById("loginForm");
+    let signupForm = document.getElementById("signupForm");
+    let formTitle = document.getElementById("formTitle");
+
+    if (loginForm.style.display === "none") {
+      loginForm.style.display = "block";
+      signupForm.style.display = "none";
+      formTitle.textContent = "Login";
+    } else {
+      loginForm.style.display = "none";
+      signupForm.style.display = "block";
+      formTitle.textContent = "Register";
+    }
+  }
+</script>
 </body>
 </html>
+
+</body>
