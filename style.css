@@ -1,9 +1,14 @@
-*{
-    margin: 0;
-    padding: 0;
-
-    
+* {
+  margin: 0;
+  padding: 0;
 }
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* rest of your CSS remains as it is... */
 
 body{
     background-color:#2C2C2C ;
@@ -194,16 +199,23 @@ body{
 .......................................................*/
 
 /* ..........Robo Info Start......... */
-.robo-info{
+.robo-info {
     color: #DFD0B8;
-    margin-left:600px;
+
+
+
+    margin: 40px auto;
+    text-align: center;
+    padding: 10px 20px;
+    max-width: 600px;
+
     border: 2px solid #DFD0B8;
     box-shadow: 2px 3px 5px black;
-    margin-right: 800px;
     border-radius: 20px;
     background-color: #F7374F;
-    transition:all 300ms ease-in 10ms;
+    transition: all 300ms ease-in 10ms;
 }
+
 
 .robo-info:hover{
 
@@ -441,5 +453,127 @@ iframe:hover{
   }
   100% {
     box-shadow: 0 0 10px #DFD0B8;
+  }
+}
+
+/* responsive layout collect form ai ....................
+...............................................................
+..............................................................
+............................................................... */
+
+/* ✅ Responsive Design Starts Here */
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .nav-logo h1 {
+    font-size: 40px;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .list ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro-text {
+    margin: 30px 20px 0;
+  }
+
+  .intro-card {
+    margin: 20px auto;
+    width: 90%;
+    text-align: center;
+  }
+
+  .icon-container {
+    justify-content: center;
+  }
+
+  .robo-info {
+    margin: 30px auto;
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  .rb-text-a {
+    font-size: 26px;
+    margin-left: 0;
+  }
+
+  .robo-card-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .robo-card {
+    width: 90%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .robo-text {
+    margin-left: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .robo-btn {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 120px;
+    height: 45px;
+  }
+
+  .youtube {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-left: 0;
+  }
+
+  iframe {
+    width: 95%;
+    height: 220px;
+  }
+
+  /* ===== Form Responsive ===== */
+  .form-section {
+    padding: 40px 10px;
+  }
+
+  .form-box {
+    width: 95%;
+    padding: 25px;
+  }
+
+  .form-btn {
+    font-size: 16px;
+  }
+
+  .form-header h2 {
+    font-size: 24px;
+  }
+
+  .input-box input {
+    font-size: 14px;
+  }
+
+  .toggle-text {
+    font-size: 13px;
   }
 }
