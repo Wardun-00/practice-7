@@ -13,6 +13,7 @@ body{
     display: flex;
     justify-content:space-between;
     
+    
 }
 .nav-logo h1{
     color:#DFD0B8 ;
@@ -26,9 +27,9 @@ body{
 
 .list ul{
     display: flex;
-    gap:20px;
+    gap:30px;
     margin-top: 50px;
-    margin-right: 50px;
+    margin-right: 150px;
 
 }
 
@@ -39,7 +40,7 @@ body{
 
 }
 
-.list ul li a{
+.list ul li a, .btn{
     text-decoration: none;
     color:#DFD0B8;
    padding: 10px 15px;
@@ -61,4 +62,160 @@ body{
     border: 5px solid;
     box-shadow: 5px 10px 25px;
 
+}
+
+/* navbar closed................................................. */
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.intro-text{
+    margin-top: 250px;
+    margin-left: 100px;
+    color:#DFD0B8;
+    
+}
+
+.intro-text h1{
+    font-size:52px ;
+}
+
+.intro-text h3{
+    font-size: 27px;
+    color: #F7374F;
+
+}
+
+.intro-text p{
+    font-size: 20px;
+}
+/* ........................ */
+
+.intro-card{
+    margin-top: 50px;
+    margin-right: 150px;
+    padding: 15px;
+    width: 450px;
+    border: 2px solid #DFD0B8;
+    border-radius: 29px;
+    
+    transition:all 100ms ease-in-out 100ms;
+    
+}
+
+.intro-card:hover{
+    background-color:#615340;
+    box-shadow: 5px 10px 15px 15px ;
+}
+
+.intro-card-text{
+    color: #DFD0B8;
+}
+
+
+
+.btn{
+   text-decoration: none;
+    
+    border: 2px solid #948979;
+    border-radius: 10px;
+
+    /* transition-property: width;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-delay: 2s; */
+    transition:all 500ms ease 10ms;
+    margin-top: 15px;
+
+   
+}
+.click-btn{
+    background-color:#f3eded;
+    text-decoration: none;
+    color:#0e0d0d;
+    padding:10px 5px 10px 10px;
+ 
+    
+
+}
+
+.btn:hover{
+  
+    background-color:#F7374F;
+    color: #2C2C2C;
+    border: 5px solid #F7374F;
+    box-shadow: 2px 10px 25px;
+}
+
+/* ....icon container......fb insta git hub */
+
+.icon-container{
+    display: flex;
+    gap:30px;
+    margin-top: 20px;
+
+    
+    
+}
+.icon-container img{
+    width: 50px;
+    height: 50px;
+    margin-top:10px;
+    padding: 5px;
+
+    
+    
+}
+
+
+.contact-btn{
+
+    background-color:#F7374F;
+    border-radius: 50%;
+
+    transition:all 250ms ease-in-out 250ms;
+}
+
+.contact-btn:hover{
+    background-color: rgb(193, 215, 255);
+    transition: all 80ms ease 80ms;
+    border: 2px solid rgb(17, 15, 15);
+    box-shadow: 5px 9px 10px black;
+    
+}
+
+/* .............intro option closed------------------ 
+.......................................................*/
+
+
+/* ........Robo card container start............. */
+
+
+.robo-card-container{
+    
+
+}
+
+.robo-image img{
+    margin-top: 40px;
+    width: 400px;
+    border-radius: 50px;
+}
+
+.robo-card{
+    padding-left: 50px;
+    border: 5px solid #DFD0B8;
+    border-radius: 50px;
+    
+    width: 500px;
+    height: 700px;
+
+    
+}
+
+.robo-text{
+    
 }
